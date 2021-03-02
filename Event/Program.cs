@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace Event
 {
@@ -10,6 +12,12 @@ namespace Event
     {
         static void Main(string[] args)
         {
+            ClassInstance monitoring = new ClassInstance();
+
+            string path = @"C:\TEST";
+            monitoring.Monitoring(path);
+
+            Console.ReadKey();
         }
     }
 }
